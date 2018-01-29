@@ -53,7 +53,7 @@
             var mtlLoader = new THREE.MTLLoader();
             mtlLoader.setTexturePath('assets/');
             mtlLoader.setPath('assets/');
-            mtlLoader.load('Cabinet_01.mtl', function (materials) {
+            mtlLoader.load('Kara_01.mtl', function (materials) {
 
                 materials.preload();
 
@@ -63,7 +63,7 @@
                 var objLoader = new THREE.OBJLoader();
                 objLoader.setMaterials(materials);
                 objLoader.setPath('assets/');
-                objLoader.load('Cabinet_01.obj', function (object) {
+                objLoader.load('Kara_01.obj', function (object) {
 
                     object.scale.set(0.03, 0.03, 0.03);
                     scene.add(object);
